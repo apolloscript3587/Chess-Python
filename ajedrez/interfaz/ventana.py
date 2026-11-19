@@ -50,8 +50,8 @@ class VentanaAjedrez(tk.Tk):
             bg="#202733", font=("Segoe UI", 10),
         ).pack(side="right", padx=4)
 
-        contenido = tk.Frame(self, bg="#202733", padx=18, pady=(0, 18))
-        contenido.pack()
+        contenido = tk.Frame(self, bg="#202733", padx=18)
+        contenido.pack(pady=(0, 18))
         tablero_frame = tk.Frame(contenido, bg="#202733", bd=0)
         tablero_frame.pack(side="left")
 
@@ -229,7 +229,8 @@ class VentanaAjedrez(tk.Tk):
             self._seleccionar(casilla)
             return
 
-        promocion = self._dialogo_promocion() if self._es_promocion(casilla) else chess.QUEEN
+        es_promocion = casilla in self.destinos_legales and self._es_promocion(casilla)
+        promocion = self._dialogo_promocion() if es_promocion else chess.QUEEN
         origen = self.casilla_seleccionada
         exito, mensaje = self.partida.mover(origen, casilla, promocion)
         self._limpiar_seleccion()
