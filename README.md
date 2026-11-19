@@ -99,4 +99,4 @@ Las pruebas verifican movimientos legales e ilegales, alternancia de turnos, des
 
 ## Autor
 
-Proyecto académico de Programación Orientada a Objetos con Python.
+Santiago De Jesús Polo Duque
