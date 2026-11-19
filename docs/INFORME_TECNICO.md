@@ -83,7 +83,7 @@ La aplicación no realiza conexiones de red durante una partida. La conexión pu
 
 ## 8. Pruebas
 
-Las pruebas automatizadas están en `tests/test_partida.py` y se ejecutan con:
+Las pruebas del modelo de partida están en `tests/test_partida.py`; las pruebas de abstracción y polimorfismo de los temas están en `tests/test_tema.py`. Se ejecutan con:
 
 ```bash
 python -m unittest discover -s tests -v
@@ -97,7 +97,7 @@ python -m unittest discover -s tests -v
 | 4. Jaque mate | Ejecutar la secuencia del mate del pastor | La partida termina con resultado `0-1` y un mensaje de jaque mate. |
 | 5. Nueva partida | Realizar una jugada y reiniciar | El historial queda vacío y se restaura la posición inicial. |
 
-Las pruebas cubren la lógica del modelo; no simulan clics ni sustituyen una comprobación manual de la interfaz en el sistema operativo de entrega. Se deben ejecutar en un entorno que tenga instalada la dependencia `python-chess`.
+Las pruebas cubren la lógica del modelo y el contrato de los temas; no simulan clics ni sustituyen una comprobación manual de la interfaz en el sistema operativo de entrega. Las pruebas del modelo requieren que esté instalada la dependencia `chess`.
 
 ## 9. Dificultades técnicas abordadas
 
