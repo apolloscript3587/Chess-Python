@@ -81,7 +81,7 @@ Chess-Python/
 python -m unittest discover -s tests -v
 ```
 
-Las pruebas verifican movimientos legales e ilegales, alternancia de turnos, deshacer, jaque mate y reinicio.
+Las pruebas verifican movimientos legales e ilegales, alternancia de turnos, deshacer, jaque mate, reinicio y abstracción y polimorfismo de los temas.
 
 ## Tecnologías
 
