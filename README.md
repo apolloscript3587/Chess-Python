@@ -19,7 +19,7 @@ La partida se juega localmente y no necesita conexión a Internet. La única dep
 
 - Python 3.10 o superior.
 - Tkinter (incluido normalmente con Python; en algunas distribuciones Linux se instala por separado).
-- Dependencia: `python-chess`.
+- Dependencia: `chess` (biblioteca python-chess).
 
 ## Instalación
 
